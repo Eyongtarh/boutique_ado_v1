@@ -33,7 +33,6 @@
 
     <title>
       Boutique Ado{% block extra_title %}
-
       {% endblock %}
     </title>
   </head>
@@ -43,5 +42,17 @@
     {% if messages %}
       <div class="message-container"></div>
     {% endif %}
+
+    {% block page_header %}
+
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% block postloadjs %}
+
+    {% endblock %}
   </body>
 </html>
